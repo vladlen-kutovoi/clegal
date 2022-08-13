@@ -299,6 +299,7 @@ table {
   width: 240px;
   padding: 20px;
   background-color: #fff;
+  border-radius: 2px;
 }
 .hero .stats-list__item:not(:last-of-type) {
   margin-bottom: 30px;
