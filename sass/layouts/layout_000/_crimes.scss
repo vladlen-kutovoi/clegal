@@ -1,0 +1,96 @@
+.crimes {
+  padding: 100px 0;
+  background-color: $lightestGrayColor;
+
+  .crime-list {
+    display: grid;
+    grid-template-columns: 240px;
+    justify-content: center;
+    grid-gap: 30px;
+
+    &__item {
+      max-width: 240px;
+      min-height: 314px;
+      background-color: $whiteColor;
+      padding: 35px 40px;
+      transition: all .15s ease;
+
+      *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $darkBlueColor;
+
+        .crime-list__icon {
+          fill: $orangeColor;
+        }
+
+        h4,
+        p {
+          color: $whiteColor;
+        }
+
+        .cta-button {
+          color: $whiteColor;
+          background-color: $orangeColor;
+          border-color: $orangeColor;
+
+          &__icon {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__icon {
+      width: 48px;
+      height: 48px;
+      fill: $brownColor;
+    }
+
+    h4 {
+      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: $darkBlueColor;
+    }
+
+    p {
+      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $grayColor;
+    }
+
+    .cta-button {
+      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-weight: 400;
+      color: $brownColor;
+      border-color: $brownColor;
+
+      &__icon {
+        width: 16px;
+        height: 10px;
+        fill: $brownColor;
+        margin-left: 10px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $orangeColor;
+        color: $whiteColor;
+
+        .cta-button__icon {
+          fill: $whiteColor;
+          display: inline;
+        }
+      }
+    }
+  }
+}
