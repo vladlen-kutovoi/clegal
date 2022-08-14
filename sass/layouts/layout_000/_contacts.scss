@@ -29,7 +29,7 @@
                 letter-spacing: 0.2px;
                 color: $whiteColor;
                 text-align: start;
-                margin-bottom: 80px;
+                margin-bottom: 130px;
 
                 h3 {
                     font-family: 'Martel', 'Arial', sans-serif;
@@ -129,7 +129,10 @@
                         line-height: 28px;
                         letter-spacing: 0.2px;
                         color: $grayColor;
-                        background-color: $whiteSilverColor;
+                    
+                        appearance: none;
+                        background: $whiteSilverColor url('/img/contacts-select-arrow.svg') no-repeat right;
+                        background-position-x: calc(100% - 20px)
                     }
 
                     select:nth-of-type(1) {

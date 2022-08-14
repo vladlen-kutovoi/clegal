@@ -1,0 +1,23 @@
+.footer {
+    padding: 80px 0 93px;
+    .container {
+        
+        .footer__links {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+
+            div:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        .description {
+            
+            p {
+                max-width: 100%;
+                
+            }
+        }
+    }
+}
