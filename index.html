@@ -37,10 +37,13 @@
           <img src="img/contacts-world.png" alt="world-card">
         </div>
         <div class="contacts-bottom">
-          <img src="img/contacts-bg.jpg" alt="woman-photo">
+          <picture class="contacts-bottom__photo">
+            <source media="(min-width: 992px)" srcset="img/contacts-bg-desktop.jpg">
+            <img src="img/contacts-bg-mobile.jpg" alt="woman-photo">
+          </picture>
           <div class="contacts-bottom__form">
             <h3>Request A Free Consultation</h3>
-            <form action="#" method="post">
+            <form class="contacts-bottom__contact-form" action="#" method="post">
               <label for="name">Name*</label>
               <input id="name" type="text" name="name" required placeholder="Full Name">
               <label for="email">Email*</label>
