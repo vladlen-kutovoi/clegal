@@ -146,14 +146,16 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 45px;
 }
 .about .container .top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 36.5px 100px;
+  padding: 100px 0 100px;
   max-width: 600px;
+  min-width: 251px;
 }
 .about .container .top .title {
   margin-bottom: 28px;
@@ -293,6 +295,7 @@ table {
 @media only screen and (min-width: 1200px) {
   .about .container {
     align-items: center;
+    min-width: none;
   }
   .about .container .bottom {
     min-width: 1050px;
