@@ -466,7 +466,7 @@ table {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 28px 0 0;
+    padding: 0 28px 0 15px;
   }
   .header .logo-link {
     position: static;
