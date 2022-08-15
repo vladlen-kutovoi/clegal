@@ -1,0 +1,20 @@
+.about {
+	.container {
+		align-items: center;
+
+		.bottom {
+			min-width: 1050px;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.bottom__left {
+				align-items: center;
+			}
+
+			.bottom__right {
+				padding: 9px 0;
+				max-width: 333px;
+			}
+		}
+	}
+}
