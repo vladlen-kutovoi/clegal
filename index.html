@@ -15,10 +15,161 @@
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo-link">Clegal</a>
+      <nav class="header__nav">
+        <h2 class="visually-hidden">Main navigation</h2>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Home</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Product</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Pricing</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu-buttons">
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-glass"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-cart"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button menu-buttons__burger">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-burger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="hero"></section>
-    <section class="crimes"></section>
+    <section class="hero">
+      <div class="bg-wrapper">
+        <div class="container">
+          <h2>Legal Pro Services</h2>
+          <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
+          <div class="button-wrapper">
+            <a href="#" class="cta-button cta-button_orange">Get Quote Now</a>
+            <a href="#" class="cta-button cta-button_transparent">Learn More</a>
+          </div>
+          <ul class="stats-list">
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-doc"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">1700+</p>
+                <p class="stats-list__description">Trusted<br class="break">clients</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-doc"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">$180 M</p>
+                <p class="stats-list__description">Recovered</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-hammer"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">98%</p>
+                <p class="stats-list__description">Successful<br class="break">cases</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-justice"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">10,6</p>
+                <p class="stats-list__description">Injury cases</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="desktop-spacer"></div>
+    </section>
+    <section class="crimes">
+      <div class="container">
+        <h3 class="visually-hidden">Crimes</h3>
+        <ul class="crime-list">
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-justice"></use>
+            </svg>
+            <h4>Frauds or<br>Mislead</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-doc"></use>
+            </svg>
+            <h4>Bailes &<br>Warrants</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-hammer"></use>
+            </svg>
+            <h4>Federal Drug<br>Crimes</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-hammer"></use>
+            </svg>
+            <h4>Traffic Related<br>Crimes</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="about">
       <div class="container">
         <div class="top">
@@ -80,9 +231,124 @@
     </section>
     <section class="clients"></section>
     <section class="team"></section>
-    <section class="contacts"></section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts-top">
+          <div class="contacts-top__text">
+            <h3>We Have Branches All 
+              Over The World</h3>
+            <p>The gradual accumulation of information about atomic and 
+              small-scale behaviour during the first quarter of the 20th 
+              century, which gave some indications about how small things 
+              do behave, produced an increasing confusion which was 
+              Heisenberg, and Born.</p>
+          </div>
+          <img src="img/contacts-world.png" alt="world-card">
+        </div>
+        <div class="contacts-bottom">
+          <picture class="contacts-bottom__photo">
+            <source media="(min-width: 992px)" srcset="img/contacts-bg-desktop.jpg">
+            <img src="img/contacts-bg-mobile.jpg" alt="woman-photo">
+          </picture>
+          <div class="contacts-bottom__form">
+            <h3>Request A Free Consultation</h3>
+            <form class="contacts-bottom__contact-form" action="#" method="post">
+              <label for="name">Name*</label>
+              <input id="name" type="text" name="name" required placeholder="Full Name">
+              <label for="email">Email*</label>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com">
+              <p>Department *</p>
+              <select name="departament" id="departament">
+                <option value="empty">Please Select</option>
+                <option value="departament-first">departament-first</option>
+                <option value="departament-second">departament-second</option>
+                <option value="departament-third">departament-third</option>
+              </select>
+              <p>Time *</p>
+              <select name="time" id="time">
+                <option value="empty">4:00 Available</option>
+                <option value="time-first">6:00</option>
+                <option value="time-second">8:00</option>
+                <option value="time-third">10:00</option>
+              </select>
+              <button type="submit">Book Appointment</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <div class="socials">
+          <h3 class="socials__title">Get In Touch</h3>
+          <p class="socials__subtitle">the quick fox jumps over the lazy dog</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#footer-facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#footer-instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#footer-twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" target="_blank">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#footer-youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="info__title">Company info</h3>
+          <ul class="info__list">
+            <li class="info__item"><a href="#" target="_blank">About Us</a></li>
+            <li class="info__item"><a href="#" target="_blank">Carrier</a></li>
+            <li class="info__item"><a href="#" target="_blank">We are hiring</a></li>
+            <li class="info__item"><a href="#" target="_blank">Blog</a></li>
+          </ul>
+        </div>
+        <div class="features">
+          <h3 class="features__title">Features</h3>
+          <ul class="features__list">
+            <li class="features__item"><a href="#" target="_blank">Business Marketing</a></li>
+            <li class="features__item"><a href="#" target="_blank">User Analytic</a></li>
+            <li class="features__item"><a href="#" target="_blank">Live Chat</a></li>
+            <li class="features__item"><a href="#" target="_blank">Unlimited Support</a></li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h3 class="resources__title">Resources</h3>
+          <ul class="resources__list">
+            <li class="resources__item"><a href="#" target="_blank">IOS & Android</a></li>
+            <li class="resources__item"><a href="#" target="_blank">Watch a Demo</a></li>
+            <li class="resources__item"><a href="#" target="_blank">Customers</a></li>
+            <li class="resources__item"><a href="#" target="_blank">Api</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="description">
+        <p>Made With Love By Figmaland All Right Reserved </p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
