@@ -1,0 +1,91 @@
+.team {
+  background: #FAFAFA;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Martel";
+    margin-top: 30px;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #252B42;
+    .title {
+      line-height: 1.5;
+    }
+    br {
+      display: none;
+    }
+
+    .content {
+      
+      font-family: 'Open Sans';
+      font-style: normal;
+      min-width: 238px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #737373;
+      }
+    
+    }
+
+    .attorneys{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .container {
+      
+      .ashley {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+        width: 250px;
+        height: 291px;         
+        .photo {
+          padding-bottom: 5px;
+        }
+        .description {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 170px;
+         
+          p {
+            line-height: 1.25;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #737373;
+          }
+          
+        }
+        span {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            padding-bottom: 10px;
+            font-size: 14px;
+            color: #D0A144;
+            
+        }
+        .name {
+            font-family: 'Martel';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            padding-bottom: 5px;
+            color: #252B42;
+        }
+      }
+    }
+  
+  
