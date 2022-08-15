@@ -466,6 +466,7 @@ table {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 28px 0 0;
   }
   .header .logo-link {
     position: static;
@@ -498,7 +499,7 @@ table {
     transform: translateY(0);
   }
   .header .menu-buttons__burger {
-    margin-left: 116px;
+    display: none;
   }
   .header_active .logo-link {
     color: #fff;

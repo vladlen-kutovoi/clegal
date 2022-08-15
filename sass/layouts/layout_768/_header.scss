@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 28px 0 0;
   }
 
   .logo-link {
@@ -45,7 +46,7 @@
     transform: translateY(0);
 
     &__burger {
-      margin-left: 116px;
+      display: none;
     }
   }
 }
