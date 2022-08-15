@@ -183,7 +183,7 @@ table {
 }
 .about .container .bottom .bottom__left {
   position: relative;
-  min-width: 290px;
+  min-width: 232px;
   display: block;
 }
 .about .container .bottom .bottom__left::before {
@@ -233,7 +233,6 @@ table {
   padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .about .container .bottom .bottom__right .quality .bottom-right__title {
@@ -296,6 +295,7 @@ table {
   .about .container {
     align-items: center;
     min-width: none;
+    padding: 0 15px;
   }
   .about .container .bottom {
     min-width: 1050px;
