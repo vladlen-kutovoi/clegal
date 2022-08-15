@@ -15,16 +15,168 @@
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo-link">Clegal</a>
+      <nav class="header__nav">
+        <h2 class="visually-hidden">Main navigation</h2>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Home</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Product</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Pricing</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu-buttons">
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-glass"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-cart"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="menu-buttons__item">
+            <button class="menu-buttons__button menu-buttons__burger">
+              <svg class="menu-buttons__icon">
+                <use xlink:href="img/sprite.svg#header-burger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="hero"></section>
-    <section class="crimes"></section>
+    <section class="hero">
+      <div class="bg-wrapper">
+        <div class="container">
+          <h2>Legal Pro Services</h2>
+          <p>We know how large objects will act, but things on a small scale just do not act that way.</p>
+          <div class="button-wrapper">
+            <a href="#" class="cta-button cta-button_orange">Get Quote Now</a>
+            <a href="#" class="cta-button cta-button_transparent">Learn More</a>
+          </div>
+          <ul class="stats-list">
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-doc"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">1700+</p>
+                <p class="stats-list__description">Trusted<br class="break">clients</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-doc"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">$180 M</p>
+                <p class="stats-list__description">Recovered</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-hammer"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">98%</p>
+                <p class="stats-list__description">Successful<br class="break">cases</p>
+              </div>
+            </li>
+            <li class="stats-list__item">
+              <svg class="stats-list__icon">
+                <use xlink:href="img/sprite.svg#hero-justice"></use>
+              </svg>
+              <div class="text-wrapper">
+                <p class="stats-list__number">10,6</p>
+                <p class="stats-list__description">Injury cases</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="desktop-spacer"></div>
+    </section>
+    <section class="crimes">
+      <div class="container">
+        <h3 class="visually-hidden">Crimes</h3>
+        <ul class="crime-list">
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-justice"></use>
+            </svg>
+            <h4>Frauds or<br>Mislead</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-doc"></use>
+            </svg>
+            <h4>Bailes &<br>Warrants</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-hammer"></use>
+            </svg>
+            <h4>Federal Drug<br>Crimes</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="crime-list__item">
+            <svg class="crime-list__icon">
+              <use xlink:href="img/sprite.svg#hero-hammer"></use>
+            </svg>
+            <h4>Traffic Related<br>Crimes</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+            <a href="#" class="cta-button">
+              More
+              <svg class="cta-button__icon">
+                <use xlink:href="img/sprite.svg#crimes-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="about"></section>
     <section class="clients"></section>
     <section class="team"></section>
     <section class="contacts"></section>
   </main>
   <footer class="footer"></footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

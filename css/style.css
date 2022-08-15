@@ -1,0 +1,581 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  min-height: 104px;
+  padding: 23px 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header .container {
+  width: 100%;
+  min-height: 58px;
+  padding: 0 40px;
+  position: relative;
+}
+.header .logo-link {
+  font-family: "Martel", "Georgia", serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  z-index: 3;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  padding: 104px 0;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: #F7F7F7;
+  transition: left 0.2s ease;
+  z-index: 2;
+}
+.header .main-menu__link {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-decoration: none;
+}
+.header .menu-buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.header .menu-buttons__button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header .menu-buttons__icon {
+  width: 24px;
+  height: 100%;
+  fill: #fff;
+}
+.header .menu-buttons__burger {
+  margin-left: 8px;
+}
+
+.header_active .logo-link {
+  color: #252B42;
+}
+.header_active .main-menu {
+  left: 0;
+}
+.header_active .main-menu__link {
+  color: #737373;
+}
+.header_active .menu-buttons__icon {
+  fill: #737373;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.hero .bg-wrapper {
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 184px 15px 94px 15px;
+}
+.hero h2 {
+  font-family: "Martel", "Gerogia", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.hero p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-bottom: 40px;
+  max-width: 539px;
+}
+.hero .button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.hero .stats-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .stats-list__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 240px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.hero .stats-list__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.hero .stats-list__icon {
+  height: 44px;
+  width: 44px;
+  fill: #DBB468;
+  margin-right: 15px;
+}
+.hero .stats-list__number {
+  font-family: "Martel", "Georgia", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  text-align: left;
+  margin: 0;
+}
+.hero .stats-list__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 36px;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 37px;
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.15s ease;
+}
+.cta-button:hover, .cta-button:focus {
+  background-color: #fff;
+  color: #737373;
+}
+.cta-button:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.cta-button_orange {
+  border-color: #DBB468;
+  background-color: #DBB468;
+}
+.cta-button_orange:hover, .cta-button_orange:focus {
+  background-color: transparent;
+  color: #DBB468;
+}
+
+.crimes {
+  padding: 100px 0;
+  background-color: #FAFAFA;
+}
+.crimes .crime-list {
+  display: grid;
+  grid-template-columns: 240px;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.crimes .crime-list__item {
+  max-width: 240px;
+  min-height: 314px;
+  background-color: #fff;
+  padding: 35px 40px;
+  transition: all 0.15s ease;
+}
+.crimes .crime-list__item *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.crimes .crime-list__item:hover, .crimes .crime-list__item:focus {
+  background-color: #252B42;
+}
+.crimes .crime-list__item:hover .crime-list__icon, .crimes .crime-list__item:focus .crime-list__icon {
+  fill: #D0A144;
+}
+.crimes .crime-list__item:hover h4,
+.crimes .crime-list__item:hover p, .crimes .crime-list__item:focus h4,
+.crimes .crime-list__item:focus p {
+  color: #fff;
+}
+.crimes .crime-list__item:hover .cta-button, .crimes .crime-list__item:focus .cta-button {
+  color: #fff;
+  background-color: #D0A144;
+  border-color: #D0A144;
+}
+.crimes .crime-list__item:hover .cta-button__icon, .crimes .crime-list__item:focus .cta-button__icon {
+  display: none;
+}
+.crimes .crime-list__icon {
+  width: 48px;
+  height: 48px;
+  fill: #784F33;
+}
+.crimes .crime-list h4 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.crimes .crime-list p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.crimes .crime-list .cta-button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: #784F33;
+  border-color: #784F33;
+}
+.crimes .crime-list .cta-button__icon {
+  width: 16px;
+  height: 10px;
+  fill: #784F33;
+  margin-left: 10px;
+}
+.crimes .crime-list .cta-button:hover, .crimes .crime-list .cta-button:focus {
+  background-color: #D0A144;
+  color: #fff;
+}
+.crimes .crime-list .cta-button:hover .cta-button__icon, .crimes .crime-list .cta-button:focus .cta-button__icon {
+  fill: #fff;
+  display: inline;
+}
+
+@media only screen and (min-width: 576px) {
+  .crimes {
+    padding: 80px 0;
+  }
+  .crimes .crime-list {
+    grid-template-columns: repeat(2, 240px);
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .no-scroll {
+    overflow-y: scroll;
+  }
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 28px 0 15px;
+  }
+  .header .logo-link {
+    position: static;
+    transform: translateY(0);
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .main-menu {
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    position: static;
+    background-color: transparent;
+    margin-right: 27px;
+  }
+  .header .main-menu__item:not(:last-child) {
+    margin-right: 21px;
+  }
+  .header .main-menu__link {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .header .menu-buttons {
+    position: static;
+    transform: translateY(0);
+  }
+  .header .menu-buttons__burger {
+    display: none;
+  }
+  .header_active .logo-link {
+    color: #fff;
+  }
+  .header_active .main-menu__link {
+    color: #fff;
+  }
+  .header_active .menu-buttons__icon {
+    fill: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .container {
+    padding-bottom: 137px;
+    position: relative;
+  }
+  .hero h2 {
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 65px;
+  }
+  .hero p {
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  .hero .button-wrapper {
+    flex-direction: row;
+  }
+  .hero .cta-button:not(:last-of-type) {
+    margin: 0 10px 0 0;
+  }
+  .hero .stats-list {
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background-color: #fff;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1050px) {
+  .hero .stats-list {
+    min-width: 1050px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .stats-list__item {
+    width: 230px;
+    min-height: 96px;
+    margin: 0 !important;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 960px) {
+  .hero .stats-list__item {
+    width: 240px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .stats-list .break {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero .desktop-spacer {
+    height: 104px;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .crimes .crime-list {
+    grid-template-columns: repeat(4, 240px);
+    grid-gap: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
