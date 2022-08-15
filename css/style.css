@@ -189,6 +189,7 @@ table {
   max-width: 100%;
 }
 .contacts .container .contacts-bottom {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -353,6 +354,7 @@ table {
   height: 24px;
 }
 .footer .container .footer__links .info__item a, .footer .container .footer__links .features__item a, .footer .container .footer__links .resources__item a {
+  color: #737373;
   text-decoration: none;
   cursor: pointer;
 }
