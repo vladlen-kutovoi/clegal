@@ -1,3 +1,5 @@
+.team {
+
 .block {
     display: flex;
     align-items: center;
@@ -9,14 +11,10 @@
    }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  grid-template-columns: 230px 230px;
+  grid-gap: 40px;
     
 
-     .ashley {
-      width: 360px;
-      
-      
-  }
+
+}
 }
