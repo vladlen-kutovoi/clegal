@@ -41,8 +41,12 @@
                 }
             }
 
-            .contacts-bottom__form {
+            &__form {
                 width: 65%; 
+
+                h3 {
+                    font-size: 40px;
+                }
             }
         }
     }
