@@ -75,7 +75,7 @@
                 h3 {
                     font-family: 'Martel', 'Arial', sans-serif;
                     font-weight: 700;
-                    font-size: 40px;
+                    font-size: 35px;
                     line-height: 50px;
                     color: $darkBlueColor;
                     text-align: start;
@@ -132,7 +132,7 @@
                         color: $grayColor;
                     
                         appearance: none;
-                        background: $whiteSilverColor url('/img/contacts-select-arrow.svg') no-repeat right;
+                        background: $whiteSilverColor url('../img/contacts-select-arrow.svg') no-repeat right;
                         background-position-x: calc(100% - 20px)
                     }
 

@@ -208,7 +208,7 @@ table {
 .contacts .container .contacts-bottom__form h3 {
   font-family: "Martel", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 50px;
   color: #252B42;
   text-align: start;
@@ -260,7 +260,7 @@ table {
   letter-spacing: 0.2px;
   color: #737373;
   appearance: none;
-  background: #f9f9f9 url("/img/contacts-select-arrow.svg") no-repeat right;
+  background: #f9f9f9 url("../img/contacts-select-arrow.svg") no-repeat right;
   background-position-x: calc(100% - 20px);
 }
 .contacts .container .contacts-bottom__form .contacts-bottom__contact-form select:nth-of-type(1) {
@@ -287,7 +287,8 @@ table {
 }
 
 .footer {
-  padding: 80px 0 25px;
+  position: relative;
+  padding: 80px 0 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -297,16 +298,15 @@ table {
   color: #737373;
 }
 .footer .container {
+  padding-bottom: 155px; /*250*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 0;
 }
 .footer .container .footer__links {
   display: flex;
   flex-direction: column;
-  margin-bottom: 57px;
 }
 .footer .container .footer__links div {
   display: flex;
@@ -364,7 +364,12 @@ table {
 .footer .container .footer__links .info__item:not(:last-child), .footer .container .footer__links .features__item:not(:last-child), .footer .container .footer__links .resources__item:not(:last-child) {
   margin-bottom: 10px;
 }
+.footer .container .footer__links .resources__item:last-child a {
+  text-transform: uppercase;
+}
 .footer .container .description {
+  position: absolute;
+  bottom: 0;
   background-color: #fafafa;
   padding: 25px;
   width: 100%;
@@ -387,15 +392,20 @@ table {
     margin: 0 auto;
   }
   .footer {
-    padding: 80px 0 93px;
+    position: relative;
+  }
+  .footer .container {
+    padding-bottom: 250px; /*250*/
   }
   .footer .container .footer__links {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
   }
   .footer .container .footer__links div:not(:last-child) {
     margin-right: 30px;
+  }
+  .footer .container .description {
+    bottom: 93px;
   }
   .footer .container .description p {
     max-width: 100%;
@@ -457,8 +467,11 @@ table {
   .contacts .container .contacts-bottom__photo img {
     max-height: 637px;
   }
-  .contacts .container .contacts-bottom .contacts-bottom__form {
+  .contacts .container .contacts-bottom__form {
     width: 65%;
+  }
+  .contacts .container .contacts-bottom__form h3 {
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 1200px) {
