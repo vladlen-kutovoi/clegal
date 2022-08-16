@@ -128,7 +128,6 @@ table {
   border-spacing: 0;
 }
 
-
 .header {
   min-height: 104px;
   padding: 23px 0;
@@ -233,91 +232,6 @@ table {
   margin: 0 auto;
 }
 
-
-.contacts {
-  max-width: 1440px;
-  background: linear-gradient(180deg, #252B42 97.6%, #fafafa 2.4%);
-  padding: 75px 0 80px 0;
-  margin: 0 auto;
-}
-.contacts .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-.contacts .container .contacts-top {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 50px 39px 125px;
-}
-.contacts .container .contacts-top__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #fff;
-  text-align: start;
-  margin-bottom: 130px;
-}
-.contacts .container .contacts-top__text h3 {
-  font-family: "Martel", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 25px;
-  line-height: 50px;
-  max-width: 456px;
-}
-.contacts .container .contacts-top__text p {
-  max-width: 270px; /*400*/
-}
-.contacts .container .contacts-top img {
-  max-width: 100%;
-}
-.contacts .container .contacts-bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-}
-.contacts .container .contacts-bottom__photo img {
-  width: 100%;
-  object-fit: cover;
-}
-.contacts .container .contacts-bottom__form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 40px 48px;
-  background-color: #fff;
-}
-.contacts .container .contacts-bottom__form h3 {
-  font-family: "Martel", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 50px;
-  color: #252B42;
-  text-align: start;
-  margin-bottom: 40px;
-}
-.contacts .container .contacts-bottom__form .contacts-bottom__contact-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.contacts .container .contacts-bottom__form .contacts-bottom__contact-form label, .contacts .container .contacts-bottom__form .contacts-bottom__contact-form p {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -408,12 +322,218 @@ table {
 }
 .hero .stats-list__description {
   font-family: "Open Sans", "Arial", sans-serif;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
+  color: #737373;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+}
 
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 36px;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 37px;
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.15s ease;
+}
+.cta-button:hover, .cta-button:focus {
+  background-color: #fff;
+  color: #737373;
+}
+.cta-button:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.cta-button_orange {
+  border-color: #DBB468;
+  background-color: #DBB468;
+}
+.cta-button_orange:hover, .cta-button_orange:focus {
+  background-color: transparent;
+  color: #DBB468;
+}
+
+.crimes {
+  padding: 100px 0;
+  background-color: #FAFAFA;
+}
+.crimes .crime-list {
+  display: grid;
+  grid-template-columns: 240px;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.crimes .crime-list__item {
+  max-width: 240px;
+  min-height: 314px;
+  background-color: #fff;
+  padding: 35px 40px;
+  transition: all 0.15s ease;
+}
+.crimes .crime-list__item *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.crimes .crime-list__item:hover, .crimes .crime-list__item:focus {
+  background-color: #252B42;
+}
+.crimes .crime-list__item:hover .crime-list__icon, .crimes .crime-list__item:focus .crime-list__icon {
+  fill: #D0A144;
+}
+.crimes .crime-list__item:hover h4,
+.crimes .crime-list__item:hover p, .crimes .crime-list__item:focus h4,
+.crimes .crime-list__item:focus p {
+  color: #fff;
+}
+.crimes .crime-list__item:hover .cta-button, .crimes .crime-list__item:focus .cta-button {
+  color: #fff;
+  background-color: #D0A144;
+  border-color: #D0A144;
+}
+.crimes .crime-list__item:hover .cta-button__icon, .crimes .crime-list__item:focus .cta-button__icon {
+  display: none;
+}
+.crimes .crime-list__icon {
+  width: 48px;
+  height: 48px;
+  fill: #784F33;
+}
+.crimes .crime-list h4 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.crimes .crime-list p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.crimes .crime-list .cta-button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: #784F33;
+  border-color: #784F33;
+}
+.crimes .crime-list .cta-button__icon {
+  width: 16px;
+  height: 10px;
+  fill: #784F33;
+  margin-left: 10px;
+}
+.crimes .crime-list .cta-button:hover, .crimes .crime-list .cta-button:focus {
+  background-color: #D0A144;
+  color: #fff;
+}
+.crimes .crime-list .cta-button:hover .cta-button__icon, .crimes .crime-list .cta-button:focus .cta-button__icon {
+  fill: #fff;
+  display: inline;
+}
+
+.contacts {
+  max-width: 1440px;
+  background: linear-gradient(180deg, #252B42 97.6%, #fafafa 2.4%);
+  padding: 75px 0 80px 0;
+  margin: 0 auto;
+}
+.contacts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.contacts .container .contacts-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 39px 125px;
+}
+.contacts .container .contacts-top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-align: start;
+  margin-bottom: 130px;
+}
+.contacts .container .contacts-top__text h3 {
+  font-family: "Martel", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  line-height: 50px;
+  max-width: 456px;
+}
+.contacts .container .contacts-top__text p {
+  max-width: 270px; /*400*/
+}
+.contacts .container .contacts-top img {
+  max-width: 100%;
+}
+.contacts .container .contacts-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.contacts .container .contacts-bottom__photo img {
+  width: 100%;
+  object-fit: cover;
+}
+.contacts .container .contacts-bottom__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 48px;
+  background-color: #fff;
+}
+.contacts .container .contacts-bottom__form h3 {
+  font-family: "Martel", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+  color: #252B42;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.contacts .container .contacts-bottom__form .contacts-bottom__contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contacts .container .contacts-bottom__form .contacts-bottom__contact-form label, .contacts .container .contacts-bottom__form .contacts-bottom__contact-form p {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
   color: #252B42;
   margin-bottom: 10px;
 }
@@ -570,14 +690,12 @@ table {
 }
 
 @media only screen and (min-width: 576px) {
-  * {
-    box-sizing: border-box;
-    line-height: 1;
+  .crimes {
+    padding: 80px 0;
   }
-  .container {
-    max-width: 1080px;
-    padding: 0 15px;
-    margin: 0 auto;
+  .crimes .crime-list {
+    grid-template-columns: repeat(2, 240px);
+    justify-content: space-evenly;
   }
   .footer {
     position: relative;
@@ -597,209 +715,6 @@ table {
   }
   .footer .container .description p {
     max-width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  * {
-    box-sizing: border-box;
-    line-height: 1;
-  }
-  .container {
-    max-width: 1080px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 992px) {
-  * {
-    box-sizing: border-box;
-    line-height: 1;
-  }
-  .container {
-    max-width: 1080px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  .contacts {
-    background: linear-gradient(180deg, #252B42 64%, #fafafa 33%);
-    padding: 50px 0 120px 0;
-  }
-  .contacts .container .contacts-top {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 0 150px 0;
-    margin-bottom: 0;
-  }
-  .contacts .container .contacts-top__text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 0;
-  }
-  .contacts .container .contacts-top p {
-    max-width: 400px;
-  }
-  .contacts .container .contacts-top img {
-    max-width: 415px;
-    max-height: 170px;
-  }
-  .contacts .container .contacts-bottom {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .contacts .container .contacts-bottom__photo {
-    width: 35%;
-  }
-  .contacts .container .contacts-bottom__photo img {
-    max-height: 637px;
-  }
-  .contacts .container .contacts-bottom__form {
-    width: 65%;
-  }
-  .contacts .container .contacts-bottom__form h3 {
-    font-size: 40px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  * {
-    box-sizing: border-box;
-    line-height: 1;
-  }
-  .container {
-    max-width: 1080px;
-    padding: 0 15px;
-    margin: 0 auto;
-=======
-  color: #737373;
-  text-align: left;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 36px;
-  background-color: transparent;
-  border: solid 1px;
-  border-radius: 37px;
-  text-decoration: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #fff;
-  border-color: #fff;
-  transition: all 0.15s ease;
-}
-.cta-button:hover, .cta-button:focus {
-  background-color: #fff;
-  color: #737373;
-}
-.cta-button:not(:last-of-type) {
-  margin-bottom: 24px;
-}
-.cta-button_orange {
-  border-color: #DBB468;
-  background-color: #DBB468;
-}
-.cta-button_orange:hover, .cta-button_orange:focus {
-  background-color: transparent;
-  color: #DBB468;
-}
-
-.crimes {
-  padding: 100px 0;
-  background-color: #FAFAFA;
-}
-.crimes .crime-list {
-  display: grid;
-  grid-template-columns: 240px;
-  justify-content: center;
-  grid-gap: 30px;
-}
-.crimes .crime-list__item {
-  max-width: 240px;
-  min-height: 314px;
-  background-color: #fff;
-  padding: 35px 40px;
-  transition: all 0.15s ease;
-}
-.crimes .crime-list__item *:not(:last-child) {
-  margin-bottom: 20px;
-}
-.crimes .crime-list__item:hover, .crimes .crime-list__item:focus {
-  background-color: #252B42;
-}
-.crimes .crime-list__item:hover .crime-list__icon, .crimes .crime-list__item:focus .crime-list__icon {
-  fill: #D0A144;
-}
-.crimes .crime-list__item:hover h4,
-.crimes .crime-list__item:hover p, .crimes .crime-list__item:focus h4,
-.crimes .crime-list__item:focus p {
-  color: #fff;
-}
-.crimes .crime-list__item:hover .cta-button, .crimes .crime-list__item:focus .cta-button {
-  color: #fff;
-  background-color: #D0A144;
-  border-color: #D0A144;
-}
-.crimes .crime-list__item:hover .cta-button__icon, .crimes .crime-list__item:focus .cta-button__icon {
-  display: none;
-}
-.crimes .crime-list__icon {
-  width: 48px;
-  height: 48px;
-  fill: #784F33;
-}
-.crimes .crime-list h4 {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #252B42;
-}
-.crimes .crime-list p {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #737373;
-}
-.crimes .crime-list .cta-button {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  color: #784F33;
-  border-color: #784F33;
-}
-.crimes .crime-list .cta-button__icon {
-  width: 16px;
-  height: 10px;
-  fill: #784F33;
-  margin-left: 10px;
-}
-.crimes .crime-list .cta-button:hover, .crimes .crime-list .cta-button:focus {
-  background-color: #D0A144;
-  color: #fff;
-}
-.crimes .crime-list .cta-button:hover .cta-button__icon, .crimes .crime-list .cta-button:focus .cta-button__icon {
-  fill: #fff;
-  display: inline;
-}
-
-@media only screen and (min-width: 576px) {
-  .crimes {
-    padding: 80px 0;
-  }
-  .crimes .crime-list {
-    grid-template-columns: repeat(2, 240px);
-    justify-content: space-evenly;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -921,6 +836,49 @@ table {
   .crimes .crime-list {
     grid-template-columns: repeat(4, 240px);
     grid-gap: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contacts {
+    background: linear-gradient(180deg, #252B42 64%, #fafafa 33%);
+    padding: 50px 0 120px 0;
+  }
+  .contacts .container .contacts-top {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 150px 0;
+    margin-bottom: 0;
+  }
+  .contacts .container .contacts-top__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .contacts .container .contacts-top p {
+    max-width: 400px;
+  }
+  .contacts .container .contacts-top img {
+    max-width: 415px;
+    max-height: 170px;
+  }
+  .contacts .container .contacts-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .contacts .container .contacts-bottom__photo {
+    width: 35%;
+  }
+  .contacts .container .contacts-bottom__photo img {
+    max-height: 637px;
+  }
+  .contacts .container .contacts-bottom__form {
+    width: 65%;
+  }
+  .contacts .container .contacts-bottom__form h3 {
+    font-size: 40px;
   }
 }
 
