@@ -1,0 +1,53 @@
+.contacts {
+    background: linear-gradient(180deg, $darkBlueColor 64%, $whiteBackgroundColor 33%);
+    padding: 50px 0 120px 0;
+
+    .container {
+
+        .contacts-top {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px 0 150px 0;
+            margin-bottom: 0;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 0;
+            }
+
+            p {
+                max-width: 400px;
+            }
+
+            img {
+                max-width: 415px;
+                max-height: 170px;
+            }
+        }
+
+        .contacts-bottom {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            &__photo {
+                width: 35%;
+
+                img {
+                    max-height: 637px;
+                }
+            }
+
+            &__form {
+                width: 65%; 
+
+                h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
