@@ -1,0 +1,20 @@
+.team {
+
+.block {
+    display: flex;
+    align-items: center;
+   
+
+    .content {
+    width: 431px;
+  }
+   }
+
+.container {
+  grid-template-columns: 230px 230px;
+  grid-gap: 40px;
+    
+
+
+}
+}
