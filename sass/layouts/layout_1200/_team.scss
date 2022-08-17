@@ -1,24 +1,11 @@
 .team {
 
-.block {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  .content {
-    width: 431px;
-    padding-bottom: 50px;
+  .block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .attorneys {
+    grid-template-columns: 230px 230px 230px 230px;
   }
 }
-
- .container {
-    grid-template-columns: 230px 230px 230px 230px;
-  
-}
-}
-
-  
-  
-  
-     
-     
-    

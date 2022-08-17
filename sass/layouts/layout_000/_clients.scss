@@ -2,114 +2,103 @@
   background-color: $blueColor;
   padding-top: 80px;
   padding-bottom: 158px;
-}
 
-.clients .container {
-  margin: 0 auto;
-  padding: 0 30px;
-}
+  .container {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 
-.clients .text {
-  padding: 0 40px;
-}
+  .text {
+    padding: 0 40px;
+    margin-bottom: 60px;
 
-.clients .text h2 {
-  font-family: 'Martel', serif;
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  letter-spacing: 0.2px;
-  margin-bottom: 17px;
-}
+    h3 {
+      font-family: 'Martel', serif;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #fff;
+      letter-spacing: 0.2px;
+      margin-bottom: 20px;
+    }
 
-.clients .between {
-  display: none;
-}
+    p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #fff;
+    }
+  }
 
-.clients .text p {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #fff;
-  margin-bottom: 65px;
-}
+  ul {
+    margin-left: 29px;
 
-.clients .container:not(:last-child) {
-  margin-bottom: 58px;
-}
+    li {
+      background-color: #fff;
+      padding: 33px 0;
+      position: relative;
 
-.clients ul {
-  margin-left: 29px;
-}
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
 
-.clients ul li {
-  background-color: #fff;
-  padding: 33px 0;
-  position: relative;
-}
+      h4 {
+        font-family: 'Martel', serif;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        color: $darkBlueColor;
+        margin-bottom: 9px;
+      }
 
-.clients ul li:not(:last-child) {
-  margin-bottom: 30px;
-}
+      h5 {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: $grayColor;
+        margin-bottom: 20px;
+      }
 
-.clients ul li h3 {
-  font-family: 'Martel', serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
-  color: $darkBlueColor;
-}
+      p {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $grayColor;
+      }
 
-.clients ul li h6 {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: $grayColor;
-  margin-bottom: 15px;
-  width: 64px;
-  height: 24px;
-}
+      .content {
+        padding-left: 80px;
+        padding-right: 50px;
+      }
 
-.clients ul li p {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: $grayColor;
-}
+      .icon {
+        height: 22px;
+        width: 22px;
+        fill: #F3CD03;
+        margin-bottom: 15px;
 
-.clients ul li .content {
-  padding-left: 80px;
-  padding-right: 50px;
-}
+        &:last-of-type {
+          stroke: #F3CD03;
+          fill: none;
+        }
+      }
+    }
+  }
 
-.clients img {
-  position: absolute;
-  left: 0;
-  top: 28px;
-  transform: translateX(-50%);
-}
+  img {
+    position: absolute;
+    left: 0;
+    top: 28px;
+    transform: translateX(-50%);
+  }
 
-.clients ul li .icon {
-  height: 22px;
-  width: 22px;
-  fill: #F3CD03;
-  margin-bottom: 15px;
-}
-
-.clients ul li .icon:nth-child(8) {
-  stroke: #F3CD03;
-  fill: none;
 }
 
 @media only screen and (max-width: 417px) {

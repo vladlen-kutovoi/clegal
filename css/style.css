@@ -186,7 +186,6 @@ table {
 .header .main-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   width: 100%;
   padding: 104px 0;
@@ -196,6 +195,9 @@ table {
   background-color: #F7F7F7;
   transition: left 0.2s ease;
   z-index: 2;
+}
+.header .main-menu__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .header .main-menu__link {
   display: flex;
@@ -314,11 +316,10 @@ table {
   font-family: "Martel", "Georgia", serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
   letter-spacing: 0.1px;
   color: #252B42;
   text-align: left;
-  margin: 0;
+  margin: 0 0 2px 0;
 }
 .hero .stats-list__description {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -328,13 +329,14 @@ table {
   letter-spacing: 0.2px;
   color: #737373;
   text-align: left;
-  margin: 0;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .cta-button {
   display: inline-flex;
   align-items: center;
+  min-height: 48px;
   padding: 10px 36px;
   background-color: transparent;
   border: solid 1px;
@@ -343,7 +345,6 @@ table {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 26px;
   text-align: center;
   letter-spacing: 0.2px;
   color: #fff;
@@ -601,31 +602,23 @@ table {
   padding-top: 80px;
   padding-bottom: 158px;
 }
-
 .clients .container {
   margin: 0 auto;
   padding: 0 30px;
 }
-
 .clients .text {
   padding: 0 40px;
+  margin-bottom: 60px;
 }
-
-.clients .text h2 {
+.clients .text h3 {
   font-family: "Martel", serif;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  line-height: 50px;
   color: #fff;
   letter-spacing: 0.2px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
-
-.clients .between {
-  display: none;
-}
-
 .clients .text p {
   font-family: "Open Sans";
   font-style: normal;
@@ -635,48 +628,34 @@ table {
   text-align: center;
   letter-spacing: 0.2px;
   color: #fff;
-  margin-bottom: 65px;
 }
-
-.clients .container:not(:last-child) {
-  margin-bottom: 58px;
-}
-
 .clients ul {
   margin-left: 29px;
 }
-
 .clients ul li {
   background-color: #fff;
   padding: 33px 0;
   position: relative;
 }
-
 .clients ul li:not(:last-child) {
   margin-bottom: 30px;
 }
-
-.clients ul li h3 {
+.clients ul li h4 {
   font-family: "Martel", serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
   letter-spacing: 0.1px;
   color: #252B42;
+  margin-bottom: 9px;
 }
-
-.clients ul li h6 {
+.clients ul li h5 {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.2px;
   color: #737373;
-  margin-bottom: 15px;
-  width: 64px;
-  height: 24px;
+  margin-bottom: 20px;
 }
-
 .clients ul li p {
   font-family: "Open Sans";
   font-weight: 400;
@@ -685,29 +664,25 @@ table {
   letter-spacing: 0.2px;
   color: #737373;
 }
-
 .clients ul li .content {
   padding-left: 80px;
   padding-right: 50px;
 }
-
-.clients img {
-  position: absolute;
-  left: 0;
-  top: 28px;
-  transform: translateX(-50%);
-}
-
 .clients ul li .icon {
   height: 22px;
   width: 22px;
   fill: #F3CD03;
   margin-bottom: 15px;
 }
-
-.clients ul li .icon:nth-child(8) {
+.clients ul li .icon:last-of-type {
   stroke: #F3CD03;
   fill: none;
+}
+.clients img {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 417px) {
@@ -724,6 +699,8 @@ table {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  max-width: 278px;
+  margin: 0 auto 45px auto;
   font-family: "Martel";
   padding: 5px 20px 5px 20px;
   font-weight: 700;
@@ -731,7 +708,7 @@ table {
   color: #252B42;
 }
 .team .block .title {
-  line-height: 1.5;
+  line-height: 50px;
 }
 .team .block br {
   display: none;
@@ -740,24 +717,18 @@ table {
   align-items: center;
   font-family: "Open Sans";
   font-style: normal;
-  width: 238px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: #737373;
 }
 .team .attorneys {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.team .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 331px;
   justify-content: center;
   grid-gap: 30px;
 }
-.team .container .ashley {
+.team .attorneys .ashley {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -766,16 +737,13 @@ table {
   height: 291px;
   background-color: #FFFFFF;
 }
-.team .container .ashley *:not(:last-child) {
-  margin-bottom: 5px;
-}
-.team .container .ashley .description {
+.team .attorneys .ashley .description {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 170px;
 }
-.team .container .ashley .description p {
+.team .attorneys .ashley .description p {
   line-height: 1.25;
   font-family: "Open Sans";
   font-style: normal;
@@ -783,19 +751,24 @@ table {
   font-size: 14px;
   color: #737373;
 }
-.team .container .ashley span {
+.team .attorneys .ashley .photo {
+  margin-bottom: 10px;
+}
+.team .attorneys .ashley span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   color: #D0A144;
+  margin-bottom: 14px;
 }
-.team .container .ashley .name {
+.team .attorneys .ashley .name {
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   color: #252B42;
+  margin-bottom: 9px;
 }
 
 .contacts {
@@ -1054,16 +1027,16 @@ table {
   }
   .crimes .crime-list {
     grid-template-columns: repeat(2, 240px);
-    justify-content: space-evenly;
+    justify-content: center;
+    grid-gap: 40px;
   }
   .team .block {
     display: flex;
     align-items: center;
+    max-width: 451px;
+    margin-bottom: 50px;
   }
-  .team .block .content {
-    width: 431px;
-  }
-  .team .container {
+  .team .attorneys {
     grid-template-columns: 230px 230px;
     grid-gap: 40px;
   }
@@ -1110,6 +1083,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 30px 0 auto;
   }
   .header .main-menu {
     flex-direction: row;
@@ -1119,10 +1093,9 @@ table {
     padding: 0;
     position: static;
     background-color: transparent;
-    margin-right: 27px;
   }
   .header .main-menu__item:not(:last-child) {
-    margin-right: 21px;
+    margin: 0 21px 0 0;
   }
   .header .main-menu__link {
     font-weight: 600;
@@ -1159,7 +1132,7 @@ table {
     margin: 0 auto;
   }
   .hero .container {
-    padding-bottom: 137px;
+    padding: 224px 15px 177px 15px;
     position: relative;
   }
   .hero h2 {
@@ -1174,6 +1147,7 @@ table {
   }
   .hero .button-wrapper {
     flex-direction: row;
+    margin-bottom: 0;
   }
   .hero .cta-button:not(:last-of-type) {
     margin: 0 10px 0 0;
@@ -1218,15 +1192,12 @@ table {
   }
 }
 @media only screen and (min-width: 992px) {
-  .crimes .crime-list {
-    grid-template-columns: repeat(4, 240px);
-    grid-gap: 0;
-  }
-}
-@media only screen and (min-width: 992px) {
   .clients {
     overflow-x: hidden;
     padding-bottom: 120px;
+  }
+  .clients .text {
+    margin-bottom: 90px;
   }
   .clients ul {
     display: flex;
@@ -1296,6 +1267,9 @@ table {
     padding: 0 15px;
     margin: 0 auto;
   }
+  .crimes .crime-list {
+    grid-template-columns: repeat(4, 240px);
+  }
   .about .container {
     align-items: center;
     min-width: none;
@@ -1314,15 +1288,10 @@ table {
     max-width: 333px;
   }
   .team .block {
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .team .block .content {
-    width: 431px;
-    padding-bottom: 50px;
-  }
-  .team .container {
+  .team .attorneys {
     grid-template-columns: 230px 230px 230px 230px;
   }
 }

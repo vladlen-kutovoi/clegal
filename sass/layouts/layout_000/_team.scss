@@ -8,6 +8,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    max-width: 278px;
+    margin: 0 auto 45px auto;
     font-family: "Martel";
     padding: 5px 20px 5px 20px;
     font-weight: 700;
@@ -15,7 +17,7 @@
     color: #252B42;
 
     .title {
-      line-height: 1.5;
+      line-height: 50px;
     }
 
     br {
@@ -26,7 +28,6 @@
       align-items: center;
       font-family: 'Open Sans';
       font-style: normal;
-      width: 238px;
       font-weight: 400;
       font-size: 14px;
       line-height: 1.5;
@@ -36,15 +37,8 @@
   }
 
   .attorneys {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-  .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 331px;
     justify-content: center;
     grid-gap: 30px;
 
@@ -56,10 +50,6 @@
       padding: 10px 20px;
       height: 291px;
       background-color: #FFFFFF;
-
-      *:not(:last-child) {
-        margin-bottom: 5px;
-      }
 
       .description {
         display: flex;
@@ -78,12 +68,17 @@
 
       }
 
+      .photo {
+        margin-bottom: 10px;
+      }
+
       span {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
         color: #D0A144;
+        margin-bottom: 14px;
 
       }
 
@@ -93,6 +88,7 @@
         font-weight: 700;
         font-size: 16px;
         color: #252B42;
+        margin-bottom: 9px;
       }
     }
   }

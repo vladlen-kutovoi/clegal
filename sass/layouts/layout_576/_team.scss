@@ -1,20 +1,14 @@
 .team {
 
-.block {
+  .block {
     display: flex;
     align-items: center;
-   
-
-    .content {
-    width: 431px;
+    max-width: 451px;
+    margin-bottom: 50px;
   }
-   }
 
-.container {
-  grid-template-columns: 230px 230px;
-  grid-gap: 40px;
-    
-
-
-}
+  .attorneys {
+    grid-template-columns: 230px 230px;
+    grid-gap: 40px;
+  }
 }
