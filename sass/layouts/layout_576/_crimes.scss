@@ -3,6 +3,7 @@
 
   .crime-list {
     grid-template-columns: repeat(2, 240px);
-    justify-content: space-evenly;
+    justify-content: center;
+    grid-gap: 40px;
   }
 }

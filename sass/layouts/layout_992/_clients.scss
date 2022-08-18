@@ -1,0 +1,28 @@
+.clients {
+  overflow-x: hidden;
+  padding-bottom: 120px;
+
+  .text {
+    margin-bottom: 90px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      &:not(:last-child) {
+        margin: 0 126px 0 0;
+      }
+
+      img {
+        left: -78px;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .content {
+    width: 461px;
+  }
+}

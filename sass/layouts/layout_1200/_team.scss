@@ -1,0 +1,11 @@
+.team {
+
+  .block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .attorneys {
+    grid-template-columns: 230px 230px 230px 230px;
+  }
+}

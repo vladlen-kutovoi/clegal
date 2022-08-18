@@ -1,0 +1,96 @@
+.team {
+  background: #FAFAFA;
+  padding: 80px 0 87px 0;
+
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 278px;
+    margin: 0 auto 45px auto;
+    font-family: "Martel";
+    padding: 5px 20px 5px 20px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #252B42;
+
+    .title {
+      line-height: 50px;
+    }
+
+    br {
+      display: none;
+    }
+
+    .content {
+      align-items: center;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #737373;
+    }
+
+  }
+
+  .attorneys {
+    display: grid;
+    grid-template-columns: 331px;
+    justify-content: center;
+    grid-gap: 30px;
+
+    .ashley {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      height: 291px;
+      background-color: #FFFFFF;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 170px;
+
+        p {
+          line-height: 1.25;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #737373;
+        }
+
+      }
+
+      .photo {
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        color: #D0A144;
+        margin-bottom: 14px;
+
+      }
+
+      .name {
+        font-family: 'Martel';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #252B42;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+}
