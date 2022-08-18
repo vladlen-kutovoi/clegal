@@ -94,7 +94,6 @@
                         line-height: 24px;
                         letter-spacing: 0.2px;
                         color: $darkBlueColor;
-                        margin-bottom: 10px;
                     }
 
                     input {
@@ -103,7 +102,7 @@
                         height: 50px;
                         border: 1px solid $silverColor;
                         border-radius: 5px;
-                        margin-bottom: 15px;
+                        margin: 15px 0 10px;
                         padding-left: 20px;
                         font-family: 'Montserrat', 'Arial', sans-serif;
                         font-style: normal;
@@ -129,7 +128,7 @@
                         line-height: 28px;
                         letter-spacing: 0.2px;
                         color: $grayColor;
-                    
+                        margin-top: 10px;
                         appearance: none;
                         background: $whiteSilverColor url('../img/contacts-select-arrow.svg') no-repeat right;
                         background-position-x: calc(100% - 20px)
@@ -147,7 +146,8 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        height: 50px;
+                        padding: 10px;
+                        min-height: 50px;
                         border-radius: 5px;
                         background-color: $brownColor;
                         border: transparent;
