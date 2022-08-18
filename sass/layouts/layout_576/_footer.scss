@@ -1,22 +1,26 @@
 .footer {
-    position: relative;
 
-    .container {
-        padding-bottom: 250px;/*250*/
-        .footer__links {
+    .footer__links {
+        padding-bottom: 80px;
+
+        .container {
             flex-direction: row;
             flex-wrap: wrap;
 
             div:not(:last-child) {
                 margin-right: 30px;
+                margin-bottom: 0;
             }
         }
+    }
 
-        .description {
-            bottom: 93px;
+    .description {
+        padding-bottom: 93px;
+        
+        .container {
             
             p {
-                max-width: 100%;
+                 max-width: 100%;
             }
         }
     }
