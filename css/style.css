@@ -449,7 +449,7 @@ table {
 }
 
 .about {
-  padding: 0 0 135px;
+  padding: 100px 0 135px;
 }
 .about .container {
   display: flex;
@@ -462,9 +462,9 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 0 100px;
   max-width: 600px;
   min-width: 251px;
+  margin-bottom: 100px;
 }
 .about .container .top .title {
   margin-bottom: 28px;
@@ -494,6 +494,7 @@ table {
   display: block;
   position: relative;
   min-width: 232px;
+  margin-bottom: 100px;
 }
 .about .container .bottom .bottom__left::before {
   content: "";
@@ -534,16 +535,15 @@ table {
   border-bottom: 13.5px solid transparent;
 }
 .about .container .bottom .bottom__right {
-  padding: 80px 0 22px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
 }
 .about .container .bottom .bottom__right .quality {
-  padding: 20px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .about .container .bottom .bottom__right .quality .bottom-right__title {
   margin-bottom: 20px;
@@ -564,9 +564,6 @@ table {
   letter-spacing: 0.2px;
   color: #737373;
   max-width: 306px;
-}
-.about .container .bottom .bottom__right .bottom-right__list {
-  padding: 30px 0;
 }
 .about .container .bottom .bottom__right .bottom-right__list .bottom-right__item {
   display: flex;
@@ -1282,9 +1279,10 @@ table {
   }
   .about .container .bottom .bottom__left {
     align-items: center;
+    margin: 0;
   }
   .about .container .bottom .bottom__right {
-    padding: 9px 0;
+    padding: 34px 0 24px;
     max-width: 333px;
   }
   .team .block {
